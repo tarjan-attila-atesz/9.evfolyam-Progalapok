@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Űrlap készítése</title>
+<meta charset="utf-8">
+<!--<link href="urlap.css" rel="stylesheet" type="text/css">-->
+<style type="text/css">
+
+body{
+background-color:#B1AB9D;
+}
+form {
+
+ background-color:#B1AB9D;
+ width:90%;
+ max-width:550px;
+}
+
+
+input + label {display:inline}
+
+
+
+fieldset {
+border:2px solid #97293F;	
+background-color:#F5EED7;
+border-radius:5px;
+	
+}
+legend
+{
+color: #fff;
+background-color: #97293F;
+font-weight:bold;
+border-radius:5px;
+} 
+</style>
+</head>
+<body>
+<form action="mailto:valaki@valahol"  method="post" name="kerdoiv" enctype="text/plain">
+<fieldset>
+<legend>Vélemény:</legend>
+  <label for="velemeny"><strong>Vélemény a honlapról:</strong></label>
+   <br>
+   <textarea cols="50" rows="10" name="velemeny" id="velemeny" placeholder="A véleményem:" required></textarea>
+  <p>
+    <input type="submit" value="Elküld">
+    <input type="reset" value="Alaphelyzetbe állít">
+  </p>
+</fieldset>  
+</form>
+</body>
+</html>

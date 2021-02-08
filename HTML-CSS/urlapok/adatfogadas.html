@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Űrlap fogadása</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+var kerelem = window.location.search;
+    if (kerelem.substring(0,1)==?){
+        kerelem = kerelem.substring(1);
+        }
+var adatok = kerelem.split(',');
+for (i = 0; i<adatok.length; i++){
+    adatok[i]= unescape(adatok[i]);
+}
+function betolt(){
+    for (i=1; i<=adatok.lenght;i++){
+document.getElementById("data"+i).innerHTML+=adatok[i-1];
+    }
+}    
+</script>
+</head>
+<body onload="betolt()">
+    <fieldset>
+        <ul>
+        <li id="data1">Vezetéknév:</li>
+        <li id ="data2">Keresztnév: </li>
+        </ul>
+    </fieldset>
+</body>
+</html>

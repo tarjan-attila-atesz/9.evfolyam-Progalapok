@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Blokkszintű elem megjelenítése soron belüliként</title>
+<meta charset="utf-8">
+  <style type="text/css">
+    nav ul {padding:0; margin:0;} 
+    nav li {
+        list-style-type:none; /*ne legyen listajelölő*/
+        display:inline;       /*soron belüli megjelenés*/
+        padding: 5px 20px;    /*belső kitöltés beállítása */
+        border-right:1px dotted black;  /*jobb oldali szegély*/
+        margin:0;     /*margó beállítása*/
+           }
+     nav li:last-child {border-right:none;} 
+       /*az utolsó listaelem jobb oldalán ne legyen szegély*/
+  </style>
+</head>
+<body>
+<nav>
+ <ul>
+   <li><a href="#">Kezdőlap</a></li>
+   <li><a href="#">Magamról</a></li>
+   <li><a href="#">Hobby</a></li>
+   <li><a href="#">Linkek</a></li>
+</ul>
+</nav>
+</body>
+</html>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Űrlap készítése</title>
+<meta charset="utf-8">
+<link href="urlap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="mailto:valaki@valahol"  method="post" name="kerdoiv" enctype="text/plain">
+  <fieldset>
+    <legend>Behajtási engedély igénylése</legend>
+    <p>Kedves Látogatónk! Az ELTE parkolójába történő behajtási engedélyhez kérjük adja meg az alábbi adatokat!</p>
+    <p>
+      <label for="nev"><strong>Név:</strong></label>
+      <input type="text" size="40" name="nev" id="nev" required maxlength="37">
+    </p>
+    <p>
+      <label for="azonosito"><strong>Gépkocsi rendszáma (3 betű majd 3 szám):</strong></label>
+      <input type="text" size="6" name="azonosito" id="azonosito"  maxlength="6" pattern="[a-zA-z]{3}[0-9]{3}" placeholder="ABC123" required>
+    </p>
+    <p>
+      <label for="kar"><strong>Melyik Karunk oktatójához érkezik?</strong></label>
+      <input type="text" size="50" name="kar" id="kar"  maxlength="50" list="karlista">
+    </p>
+    <datalist id="karlista">
+      <option>Állam- és Jogtudományi Kar (ELTE ÁJTK)</option>
+      <option>Bárczi Gusztáv Gyógypedagógia Kar (ELTE BGGyK)</option>
+      <option>Bölcsészettudományi Kar (ELTE BTK)</option>
+      <option>Informatikai Kar (ELTE IK)</option>
+      <option>Pedagógiai és Pszichológiai Kar (ELTE PPK)</option>
+      <option>Tanító- és Óvóképző Kar (ELTE TÓK)</option>
+      <option>Társadalomtudományi Kar (ELTE TáTK)</option>
+      <option>Természettudományi Kar (ELTE TTK)</option>
+    </datalist>
+    <p>
+      <input type="submit" value="Elküld">
+      <input type="reset" value="Alaphelyzetbe állít">
+    </p>
+  </fieldset>
+</form>
+</body>
+</html>

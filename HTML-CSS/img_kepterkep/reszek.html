@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IMG USEMAP PÉLDA</title>
+<link href="css/ta.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
+</head>
+
+<body>
+  <div id="content">
+    <h2>Számítógép részei</h2>
+    <p>Vigye az egérmutatót a számítógép számozott részeire, hogy megtudja az egyes részek nevét.<br />Az egyes részekre való kattintással eljuthat a Wikipedia adott oldalára.</p>
+    <p><img src="pcParts.png" alt="A számítógép részei" width="600" height="300" usemap="#computer" />
+      <map name="computer" id="computer">
+        <area class="tab" shape="rect" coords="142,59,260,175" href="https://hu.wikipedia.org/wiki/Monitor" alt="Monitor" title="Monitor" />
+        <area class="tab" shape="rect" coords="272,123,293,201" href="https://hu.wikipedia.org/wiki/Modem" alt="Modem" title="Modem" />
+        <area class="tab" shape="rect" coords="302,70,342,190" href="https%3A%2F%2Fhu.wikipedia.org%2Fwiki%2FSz%C3%A1m%C3%ADt%C3%B3g%C3%A9ph%C3%A1z" alt="Számítógépház" title="Számítógépház" />
+        <area class="tab" shape="poly" coords="170,225,189,264,313,236,297,208" href="https%3A%2F%2Fhu.wikipedia.org%2Fwiki%2FBillenty%C5%B1zet" alt="Billentyűzet" title="Billentyűzet" />
+        <area class="tab" shape="circle" coords="342,220,15" href="https%3A%2F%2Fhu.wikipedia.org%2Fwiki%2FEg%C3%A9r_%28sz%C3%A1m%C3%ADt%C3%A1stechnika%29" alt="Egér" title="Egér" />
+        <area class="tab" shape="rect" coords="354,127,379,185" href="https%3A%2F%2Fhu.wikipedia.org%2Fwiki%2FHangsz%C3%B3r%C3%B3" alt="Hangszóró" title="Hangszóró" />
+        <area class="tab" shape="poly" coords="468,103,414,134,387,178,436,216,457,207,497,192,495,130,496,108" href="https%3A%2F%2Fhu.wikipedia.org%2Fwiki%2FNyomtat%C3%B3" alt="Nyomtató" title="Nyomtató" />
+      </map>
+    </p>
+	</div>
+</div>
+</body>
+</html>

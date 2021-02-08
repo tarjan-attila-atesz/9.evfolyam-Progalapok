@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Adatok küldése Form-tagből</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+function setFocus(){
+document.getElementById("veznev").focus();    
+}
+</script>
+</head>
+<body onLoad="setFocus()">
+<h1>Adatok küldése Form tagből </h1>
+<form name="adatok" action="adatfogadas_formbol.html" method="get">
+<!-- A form method get-része a böngésző URL-jében továbbítja az adatokat -->
+<fieldset>
+<legend>Vezetéknév:</legend> <input type="text" name="vezeteknev" id="veznev">
+<legend> Keresztnév:</legend> <input type="text" name="keresztnev">
+<legend> Házas?</legend>
+
+<label><input type="radio" name="hazas" value="igen" id="hazas_igen">IGEN</label>
+<br>
+<label><input type="radio" name="hazas" value="nem" id="hazas_nem">NEM </label>
+</fieldset>
+<input type="submit" value="Küldés">
+<input type="reset" value="Törlés">
+</form>
+</body>
+</html>

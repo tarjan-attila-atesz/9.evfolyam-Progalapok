@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Osztály példa</title>
+<style type="text/css">
+p          {padding:5px;margin:10px;}
+.fontos    {color:red;}
+p.szegely  {border:1px solid black;}
+h1.szegely {border:2px dotted blue;}
+</style>
+</head>
+<body>
+<h1>Címsor</h1>
+<p class="fontos">Piros színű bekezdés, mert a fontos osztályba tartozik.</p>
+<p class="szegely">Fekete szegély van a bekezdésen, mert a szegely osztályba van sorolva.</p>
+<p class="szegely fontos">A bekezdés piros színű és fekete szegéllyel ellátott mert a szegely és fontos osztályba is be van sorolva.</p>
+<h1 class="szegely fontos">Címsor</h1>
+<p>A fenti címsor piros, mert be van sorolva a fontos osztályba. Szegélye is van, mert be van sorolva a szegely osztályba. Azonban más a szegélye, mint a bekezdésnek, mert a <h1> elemre más tulajdonságokkal hoztuk létre a szegely nevű osztályt.</p>
+</body>
+</html>

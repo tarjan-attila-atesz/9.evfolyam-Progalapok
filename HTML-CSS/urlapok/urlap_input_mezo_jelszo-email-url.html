@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Űrlap készítése</title>
+<meta charset="utf-8">
+    <style type="text/css">
+form {
+ padding:10px 5px;
+ background-color:#B1AB9D;
+ width:90%;
+ max-width:550px;
+}
+
+label {
+	display:block;
+	margin:10px 0 5px 0;
+}
+
+input + label {display:inline}
+
+legend
+{
+color: #fff;
+background-color: #97293F;
+padding: 5px 10px;
+font-weight:bold;
+border-radius:5px;
+} 
+
+fieldset {
+border:2px solid #97293F;	
+background-color:#F5EED7;
+border-radius:5px;
+	
+}
+    
+
+    </style>
+</head>
+<body>
+<form action="mailto:valaki@valahol"  method="post" name="kerdoiv" enctype="text/plain">
+  <fieldset>
+    <legend>Regisztráció</legend>
+    <p>Kedves Látogatónk! A szolgáltatásunk igénybevételéhez kérjük, regisztráljon az alábbi adatok megadásával!</p>
+    <p>
+      <label for="azonosito"><strong>Azonosító*:</strong></label>
+      <input type="text" size="10" name="azonosito" id="azonosito" required maxlength="10">
+    </p>
+    <p>
+      <label for="jelszo"><strong>Jelszó*:</strong></label>
+      <input type="password" size="10" name="jelszo" id="jelszo"  maxlength="10" required>
+    </p>
+    <p>
+      <label for="jelszoell"><strong>Jelszó még egyszer*:</strong></label>
+      <input type="password" size="10" name="jelszoell" id="jelszoell"  maxlength="10" required>
+    </p>
+    <p>
+      <label for="emailcim"><strong>E-mail cím*:</strong></label>
+      <input type="email" size="30" name="emailcim" id="emailcim" required>
+    </p>
+    <p>
+      <label for="telefonszam"><strong>Telefonszám:</strong><br>
+        Formátum: +36(körzetszám)123-4567</label>
+      <input type="tel" size="15" name="telefonszam" id="telefonszam"  maxlength="15" placeholder="+36(99)123-456" pattern="[\+]36[\(]\d{1,2}[\)]\d{3}[\-]\d{3,4}">
+    </p>
+    <p>
+      <label for="honlapcim"><strong>Honlap címe (ha van):</strong></label>
+      <input type="url" size="30" name="honlapcim" id="honlapcim">
+    </p>
+    <p>
+      <input type="submit" value="Elküld">
+      <input type="reset" value="Alaphelyzetbe állít">
+    </p>
+  </fieldset>
+    <fieldset>
+        
+            <legend>Véleményem:</legend>
+        <p>
+            <textarea cols="50" rows="10" name="velemeny" placeholder=" ird ide a velemenyed" required>
+            </textarea>
+        </p>
+    </fieldset>
+</form>
+</body>
+</html>

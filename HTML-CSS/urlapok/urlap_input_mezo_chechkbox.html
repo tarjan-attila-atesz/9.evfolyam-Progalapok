@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Űrlap készítése</title>
+<meta charset="utf-8">
+<link href="urlap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="mailto:valaki@valahol"  method="post" name="kerdoiv" enctype="text/plain">
+  <fieldset>
+    <legend>Kérdőív</legend>
+    <p>Mely kurzusokat vetted fel ebben a félévben?</p>
+    <p>
+      <input type="checkbox" name="webfejlesztes" id="webfejlesztes" value="igen" checked>
+      <label for="webfejlesztes">Web-fejlesztés 1.</label>
+    </p>
+    <p>
+      <input type="checkbox" name="webprogramozas" id="webprogramozas" value="igen">
+      <label for="webprogramozas">Web-programozás 1.</label>
+    </p>
+    <p>
+      <input type="checkbox" name="webgrafika" id="webgrafika" value="igen">
+      <label for="webgrafika">Web-grafika 2.</label>
+    </p>
+    <p>
+      <input type="submit" value="Elküld">
+      <input type="reset" value="Alaphelyzetbe állít">
+    </p>
+  </fieldset>
+</form>
+</body>
+</html>

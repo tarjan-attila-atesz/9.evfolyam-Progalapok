@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Űrlap készítése</title>
+<meta charset="utf-8">
+<link href="urlap.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="mailto:valaki@valahol"  method="post" name="kerdoiv" enctype="text/plain">
+  <fieldset>
+    <legend>Hiba elküldése:</legend>
+    <p>
+      <label for="hibajelzes">Hiba leírása:</label>
+      <textarea cols="50" rows="10" name="hibajelzes" id="hibajelzes" required> </textarea>
+    </p>
+    <p>
+      <input type="submit" value="Hiba elküldése e-mail címre">
+      <input type="submit" value="Hiba elküldése szerver oldali feldolgozásra" formaction="http://webfejlesztes.elte.hu/" formmethod="get">
+      <input type="reset" value="Alaphelyzetbe állít">
+    </p>
+  </fieldset>
+</form>
+</body>
+</html>

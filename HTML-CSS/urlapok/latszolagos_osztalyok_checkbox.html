@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<title>Látszólagos osztályok</title>
+<style type="text/css">
+   input[type=checkbox]:checked + label 
+   {
+     color: green;
+     font-weight: bold;
+   }
+input[type=checkbox]:disabled + label 
+   {
+     color: #555;
+     font-style: italic;
+   }
+</style>
+  </head>
+  <body>
+<form action="#"  method="get">
+<p><b>Mely kurzusokat veszed fel ebben a félévben?</b></p>
+<input type="checkbox" name="webfejlesztes" id="wf" value="igen">
+<label for="wf">Web-fejlesztés 1.</label>
+<br>
+<input type="checkbox" name="webprogramozas" id="wp" value="igen">
+<label for="wp">Web-programozás 1.</label>
+<br>
+<input type="checkbox" name="webgrafika" id="wg" value="igen">
+<label for="wg">Web-grafika 2.</label>
+<br>
+<input type="checkbox" name="bevesely" id="bev" value="igen" disabled>
+<label for="bev">Bevezetés az esélyegyenlőséget szolgáló infokommunikációs technológiákba (Ebben a félévben nem indul.)</label>
+<br>
+<input value="Adatok elküldése" type="submit">
+<input value="Törlés" type="reset">
+</form>
+  </body>
+</html>

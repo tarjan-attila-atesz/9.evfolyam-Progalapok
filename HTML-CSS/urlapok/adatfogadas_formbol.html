@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Adatok fogadása Form-tagből</title>
+<meta charset="utf-8">
+<script type="text/javascript">
+var kerelem = window.location.search;
+if (kerelem.substring(0, 1) == '?'){
+kerelem = kerelem.substring(1);
+			}
+var adatok = kerelem.split('&');
+function betolt(){
+for (i = 0; i < adatok.length; i++){
+var adat = adatok[i].split('=');
+if(adat[0]=="hobbi"){
+document.getElementById(adat[0]).innerHTML+="<li>"+unescape(adat[1])+"</li>";
+} else {
+regularis_kifejezes=/[+]/g;
+document.getElementById(adat[0]).innerHTML+=unescape(adat[1]).replace(regularis_kifejezes," ");
+						}
+				}
+			}
+</script>
+</head>
+
+	<body onLoad="betolt()">
+<fieldset>
+<legend>Személyi Adatok:</legend>
+    <ul>
+        <li id="vezeteknev">Vezetéknév: </li>
+        <li id="keresztnev">Keresztnév: </li> 
+        <li id="hazas">Házás?: </li> 
+    </ul>
+</fieldset>
+</body>
+</html>

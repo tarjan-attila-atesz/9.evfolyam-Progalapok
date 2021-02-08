@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+   <title>Űrlap elküldése</title>
+   <meta charset="utf-8">
+<script type="text/javascript">
+
+ function setFocus(){    
+document.getElementById("veznev").focus();
+ 
+}
+ function kuld(){
+var adatok = new Array();
+for (i=0; i < (document.getElementsByName("szemadat").length)+
+(document.getElementsByName("cimadat").length); i++) {
+if (i < document.getElementsByName("szemadat").length) {
+adatok[i]=document.getElementsByName("szemadat")[i].value;    
+}   
+else 
+{
+document.getElementsByName("cimadat")[i-document.getElementsByName("szemadat").length].value;}   
+}
+adatKuldes(adatok);    
+}
+function adatKuldes(adat){
+    var csomag = "";
+    for (i = 0; (i<adat.length);i++){
+        if (i>0){
+            csomag += ",";
+        }
+        csomag += escape(adat[i]);
+    }
+    window.location = "adatfogadas.html?" + csomag;
+}    
+    
+    </script>
+    </head>
+<body onload="setFocus()">
+    <fieldset>
+    <ul>
+    <li>Vezetéknév: <input type="text" name="szemadat" id="veznev">
+    </li>
+    <li>Keresztnév: <input type="text" name="szemadat" id="kernev">
+    </li>
+        <br>    
+    </ul>
+    <input type="button" onclick="kuld()" value="Küldes">    
+    </fieldset>
+    
+    
+</body>
+</html>

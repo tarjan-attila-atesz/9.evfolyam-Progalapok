@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Vízszintes szövegigazítás</title>
+<meta charset="utf-8">
+<style type="text/css">
+  p {border-bottom:1px dotted gray;} /* alsó szegély beállítása a bekezdésekre */
+  .pelda1 {text-align: center;}
+  .pelda2 {text-align: right;}
+  .pelda3 {text-align: justify;}
+  .pelda4 {text-align: left;}
+  .start  {text-align: start;}
+</style>
+</head>
+<body>
+    <p class="pelda1">Az első bekezdés középre van igazítva.</p>
+    <p class="pelda2">A második bekezdés jobbra van igazítva. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue sem, tempor id enim ut, rhoncus dictum ante. Aliquam erat volutpat. Pellentesque non felis vitae lorem tincidunt vestibulum. Donec rhoncus, est eu posuere tincidunt, nunc mauris molestie tortor, id ullamcorper nunc justo eget sem. Nam egestas felis sed ante auctor, tincidunt facilisis metus convallis. Vivamus sollicitudin vestibulum felis, a varius lacus posuere dignissim. </p>
+    <p class="pelda3">A harmadik bekezdés sorkizárttá van téve, ami csak akkor látványos, ha a sor elér a szülő elem határáig. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue sem, tempor id enim ut, rhoncus dictum ante. Aliquam erat volutpat. Pellentesque non felis vitae lorem tincidunt vestibulum. Donec rhoncus, est eu posuere tincidunt, nunc mauris molestie tortor, id ullamcorper nunc justo eget sem. Nam egestas felis sed ante auctor, tincidunt facilisis metus convallis. Vivamus sollicitudin vestibulum felis, a varius lacus posuere dignissim. </p>
+    <p class="pelda4">A negyedik bekezdés balra van igazítva. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam augue sem, tempor id enim ut, rhoncus dictum ante. Aliquam erat volutpat. Pellentesque non felis vitae lorem tincidunt vestibulum. Donec rhoncus, est eu posuere tincidunt, nunc mauris molestie tortor, id ullamcorper nunc justo eget sem. Nam egestas felis sed ante auctor, tincidunt facilisis metus convallis. Vivamus sollicitudin vestibulum felis, a varius lacus posuere dignissim. </p>
+    <div style="direction:ltr">
+        <p class="start">A blokkra balról jobbra olvasási sorrend van beállítva, az igazításnál a start érték van beállítva, ezért a bekezdés balra igazodik.</p>
+    </div>
+    <div style="direction:rtl">
+        <p class="start">A blokkra jobbról balra olvasási sorrend van beállítva, az igazításnál a start érték van beállítva, ezért a bekezdés jobbra igazodik.</p>
+    </div>
+</body>
+</html>

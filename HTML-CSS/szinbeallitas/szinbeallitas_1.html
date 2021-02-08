@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<title>Színbeállítások</title>
+<meta charset="utf-8">
+<style type="text/css">
+body {background-color:lightyellow;}
+  div {
+     width:180px;    /*szélesség*/
+     height:100px;   /*magasság*/
+     margin:5px;    /*margó*/
+     padding:10px;   /*belső kitöltés*/ 
+     float: left;              /*balra lebegtetés*/
+     text-align:center;        /*szöveg igazítása középre*/
+     font-weight:bold;         /*félkövér kiemelés*/
+     border:1px solid black;   /*szegély beállítás*/
+     }
+  div:nth-child(1) { 
+                    background-color:azure;
+                    color:blue;
+                   }   
+  div:nth-child(2) { 
+                    background-color:#0000ff;
+                    color:#fff;
+                  }   
+  div:nth-child(3) { 
+                    background-color:rgb(0,0,255);
+                    color:#fff;
+                   }   
+  div:nth-child(4) { 
+                    background-color:rgba(0,0,255,0.6);
+                    color:#fff;
+                   }   
+  div:nth-child(5) { 
+                    background-color:rgba(0,0,255,0.2);
+                    color:#000;
+                   }
+  div:nth-child(6) { 
+                    background-color:hsl(100,70%,50%);
+                    color:#000;
+                   }
+</style>
+</head>
+<body>
+  <div>1. példa<br>
+       background-color:azure;<br>
+       color:blue;
+  </div>
+  <div>2. példa<br>
+       background-color:#0000ff;<br>
+       color:#fff;
+  </div>
+  <div>3. példa<br>
+       background-color:rgb(0,0,255);<br>
+       color:#fff;
+  </div>
+  <div>4. példa<br>
+       background-color:rgba(0,0,255,0.6);<br>
+       color:#fff;</div>
+  <div>5. példa<br>
+       background-color:rgba(0,0,255,0.2);<br>
+       color:#000;
+   </div>
+  <div>6. példa<br>
+       background-color:hsl(100,70%,50%);<br>
+       color:#000;
+  </div>
+</body>
+</html>
