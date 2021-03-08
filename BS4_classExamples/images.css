@@ -1,0 +1,13 @@
+.image-greyscale {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.image-sepia {
+    filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+}
+
+.image-border {
+    border-radius: 15px 140px 30px 5px;
+}
