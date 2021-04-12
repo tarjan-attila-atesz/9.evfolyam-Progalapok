@@ -59,21 +59,21 @@ html {
     font-size: 3rem;
 }
 
-.btn-primary {
+.btn-green {
     background-color: #abda0a
 }
 
-.btn-primary:hover {
+.btn-green:hover {
     background-color: #CEFF25;
 }
 
-a.btn-primary {
+a.btn-green {
     color: #950ADA;
     text-transform: uppercase;
     font-weight: 500;
 }
 
-a.btn-primary:hover {
+a.btn-green:hover {
     color: white;
     text-transform: uppercase;
     font-weight: 500;
