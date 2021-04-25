@@ -78,3 +78,22 @@ a.btn-green:hover {
     text-transform: uppercase;
     font-weight: 500;
 }
+
+.font-lg {
+    font-size: 1.4rem;
+}
+
+.bg-green {
+    background-color: rgba(171, 218, 10, 0.2);
+}
+
+.home-card {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.19), 0 6px 10px rgba(0, 0, 0, 0.23);
+}
+
+.home-card:hover {
+    animation: bounceIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 0.5s;
+    /* don't forget to set a duration! */
+}
